@@ -9,6 +9,6 @@ class CompanyController extends Controller
 {
     public function index()
     {
-        return view('index', ['companies' => Company::all()-> toArray()]);
+        return response()->json(['companies' => Company::all()]);
     }
 }

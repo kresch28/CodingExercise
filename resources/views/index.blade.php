@@ -12,7 +12,7 @@
         <h1>jobs.at coding exercise</h1>
 
         <div id="app">
-            <Home :jobs='@json($jobs)' :companies='@json($companies)' />
+            <Container :jobs='@json($jobs)' :companies='@json($companies)' />
         </div>
 
         <script src="{{ mix('/js/app.js') }}" defer></script>

@@ -12,4 +12,16 @@
 */
 
 Route::get('/', 'JobController@index');
-Route::get('/company', 'JobController@company');
+Route::post('/', 'JobController@addJob');
+Route::get('/companies', 'CompanyController@index');
+Route::get('/login', function () {
+    return view('login');
+});
+Route::get('/add', function () {
+    return view('add');
+});
+Route::get('/filter', function () {
+    return view('index');
+});
+
+
